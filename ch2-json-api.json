@@ -1,0 +1,33 @@
+{
+  "links": {
+    "posts.author": {
+      "href": "http://example.com/people/{posts.author}",
+      "type": "people"
+    },
+    "posts.comments": {
+      "href": "http://example.com/comments/{posts.comments}",
+      "type": "comments"
+    }
+  },
+  "posts": [{
+    "id": "1",
+    "title": "Rails is Omakase",
+    "links": {
+      "author": "9",
+      "comments": [ "1", "2" ]
+    }
+  }],
+  "linked": {
+    "people": [{
+      "id": "9",
+      "name": "@d2h"
+    }],
+    "comments": [{
+      "id": "1",
+      "body": "Mmmmmakase"
+    }, {
+      "id": "2",
+      "body": "I prefer unagi"
+    }]
+  }
+}

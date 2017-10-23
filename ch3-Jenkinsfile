@@ -1,0 +1,18 @@
+node {
+  docker.withRegistry('', 'dockerhub-tlhunter') {
+    def image
+
+    stage('Build Docker Image') {
+      image = docker.build("tlhunter/radar")
+    }
+
+    stage('Docker Push') {
+      image.push(env.BUILD_NUMBER)
+      image.push('latest')
+    }
+
+    stage('Restart Service') {
+      sh('/usr/bin/sudo /usr/sbin/service radar restart')
+    }
+  }
+}

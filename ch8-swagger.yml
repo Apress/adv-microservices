@@ -1,0 +1,24 @@
+---
+swagger: '2.0'
+info:
+  version: 0.2.0
+  title: Radar Server
+  description: Example Interaction with the Radar Server
+schemes:
+  - https
+host: api.radar.chat
+basePath: /v1
+paths:
+  /channels/{channel_name}:
+    parameters:
+      - name: channel_name
+        in: path
+        description: Channel Name
+        type: string
+        required: true
+    get:
+      responses:
+        200:
+          description: Channel Information
+        404:
+          description: Channel not Found
