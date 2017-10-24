@@ -1,6 +1,6 @@
 # Apress Source Code
 
-This repository accompanies [*Advanced Microservices*](http://www.apress.com/9781484228869) by Thomas Hunter II (Apress, ).
+This repository accompanies [*Advanced Microservices*](http://www.apress.com/9781484228869) by Thomas Hunter II (Apress, 2017).
 
 [comment]: #cover
 ![Cover image](9781484228869.jpg)
